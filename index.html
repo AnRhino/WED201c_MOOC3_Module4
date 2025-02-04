@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<div id="image">
+		Hover over an image below to display here.
+	</div>
+
+	<nav class="flex">
+
+		<img class="preview" tabindex="1" alt="Styling with a Bandana"
+			src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover="upDate(this)"
+			onmouseout="unDo()">
+
+		<img class="preview" tabindex="2" alt="With My Boy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG"
+			onmouseover="upDate(this)" onmouseout="unDo()">
+
+		<img class="preview" tabindex="3" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt="Young Puppy"
+			onmouseover="upDate(this)" onmouseout="unDo()">
+	</nav>
+
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
