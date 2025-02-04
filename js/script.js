@@ -23,7 +23,7 @@ function randomImage() {
         var index = Math.floor(Math.random() * imageNames.length);
         options[i].src = '../images/' + imageNames.splice(index, 1)[0];
         options[i].alt = imageAltTexts.splice(index, 1)[0];
-        
+        options[i].setAttribute('tabindex', ''+(i+1))
     }
 }
 
