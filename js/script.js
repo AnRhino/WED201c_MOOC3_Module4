@@ -1,11 +1,39 @@
-var div = document.getElementById('image');
+var centerBox = document.getElementById('image');
+var options = document.querySelectorAll('.option');
+var imageNames = [
+    'Brazil.png',
+    'Canada.png',
+    'Japan.png',
+    'SouthAfrica.png',
+    'Thailand.png',
+    'Vietnam.png'
+];
 
-function upDate(previewPic) {
-    div.style.backgroundImage = "url('"+previewPic.src+"')";
-    div.innerHTML = previewPic.alt;
+var imageAltTexts = [
+    'Brazil',
+    'Canada',
+    'Japan',
+    'South Africa',
+    'Thailand',
+    'Vietnam'
+];
+
+function randomImage() {
+    for (var i = 0; i < options.length; i++) {
+        var index = Math.floor(Math.random() * imageNames.length);
+        options[i].src = 'images/' + imageNames.splice(index, 1)[0];
+        options[i].alt = imageAltTexts.splice(index, 1)[0];
+        
+    }
+}
+
+function upDate(option) {
+    centerBox.style.backgroundImage = "url('" + option.src + "')";
+    centerBox.innerHTML = option.alt;
+
 }
 
 function unDo() {
-   div.style.backgroundImage = "url('')";
-   div.innerHTML = "Hover over an image below to display here.";
+    centerBox.style.backgroundImage = "url('')";
+    centerBox.innerHTML = "Hover over an Image below Display the Alt Text";
 }

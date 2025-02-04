@@ -8,22 +8,18 @@
 	<script src="js/script.js"></script>
 </head>
 
-<body>
-	<div id="image">
-		Hover over an image below to display here.
+<body onload="randomImage()">
+	<div id="image" tabindex="0">
+		Hover over an Image below Display the Alt Text
 	</div>
 
 	<nav class="flex">
 
-		<img class="preview" tabindex="1" alt="Styling with a Bandana"
-			src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover="upDate(this)"
-			onmouseout="unDo()">
+		<img class="option" tabindex="1" onmouseover="upDate(this)" onfocus="upDate(this)" onmouseout="unDo()" onblur="unDo()">
 
-		<img class="preview" tabindex="2" alt="With My Boy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG"
-			onmouseover="upDate(this)" onmouseout="unDo()">
+		<img class="option" tabindex="2" onmouseover="upDate(this)" onfocus="upDate(this)" onmouseout="unDo()" onblur="unDo()">
 
-		<img class="preview" tabindex="3" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt="Young Puppy"
-			onmouseover="upDate(this)" onmouseout="unDo()">
+		<img class="option" tabindex="3" onmouseover="upDate(this)" onfocus="upDate(this)" onmouseout="unDo()" onblur="unDo()">
 	</nav>
 
 	<script src="js/script.js"></script>
